@@ -12,4 +12,8 @@ export default class HousesController{
     constructor(){
         console.log("houses controller")
     }
+
+    createHouses(){
+        
+    }
 }

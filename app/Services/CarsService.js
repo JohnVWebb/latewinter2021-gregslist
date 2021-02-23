@@ -35,8 +35,6 @@ class CarsService{
     } catch (error) {
       console.error(error)
     }
-    
-
   }
 
   async bid(id) {
@@ -48,7 +46,6 @@ class CarsService{
       // NOTE this is another opportunity to go and fetch the data and make sure it is the most up to date with our database
       ProxyState.cars = ProxyState.cars
     } catch (error) {
-      
     }
   }
 
