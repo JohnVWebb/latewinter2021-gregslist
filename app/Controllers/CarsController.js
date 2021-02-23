@@ -7,13 +7,13 @@ import { carsService } from "../Services/CarsService.js"
     cars.forEach(car=> template += car.Template)
     // console.log(template)
     document.getElementById('cars').innerHTML = template
-    console.log(ProxyState.cars)
+    //console.log(ProxyState.cars)
   }
 
 export default class CarsController{
   constructor(){
     console.log("cars controller working")
-    console.log(ProxyState.cars)
+    //console.log(ProxyState.cars)
     _draw()
     ProxyState.on("cars", _draw)
   }

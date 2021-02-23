@@ -13,7 +13,7 @@ class CarsService{
   async getCars() {
     try {
       const res = await api.get('cars')
-      // console.log(res.data)
+       //console.log(res.data)
       ProxyState.cars = res.data.map(rawCarData => new Car(rawCarData))
     } catch (error) {
       console.error(error)
